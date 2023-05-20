@@ -5,6 +5,8 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  document.title = `Hello James`
+  document.favicon = `https://www.google.com/s2/favicons?domain=www.google.com`
 
   return (
     <>
