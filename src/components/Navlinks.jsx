@@ -1,6 +1,7 @@
 import React from 'react'
 import { Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
+import PropTypes from 'prop-types';
 
 export default function Navlinks({className, clickHander}) {
   return (
@@ -11,4 +12,9 @@ export default function Navlinks({className, clickHander}) {
         <NavLink onClick={clickHander} className="nav-link" to="/tech">Technology</NavLink>
       </Nav>
   )
+}
+
+Navlinks.propTypes = {
+  className: PropTypes.string,
+  clickHander: PropTypes.func
 }
