@@ -4,7 +4,7 @@ import style from './NavbarHeader.module.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import Navlinks from './Navlinks'
 import './navbar.css'
-import logo from '../assets/images/Logo.png'
+import logo from '../assets/images/logo.png'
 
 export default function NavbarHeader() {
   const [hamburger, setHamburger] = React.useState(false)
