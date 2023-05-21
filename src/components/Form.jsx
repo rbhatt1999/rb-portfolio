@@ -44,7 +44,7 @@ export default function Form() {
           animate={{ opacity: 1, y: 0, transition: { duration: 1 } }}
          className={styles.msgContainer}>
           <h2 className={styles.msgTitle}>Thanks for your message!</h2>
-          <p>I'll get back to you as soon as possible.</p>
+          <p>I&apos;ll get back to you as soon as possible.</p>
         </motion.div>
       )}
     </section>

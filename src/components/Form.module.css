@@ -11,7 +11,8 @@
   overflow: hidden;
 }
 
-.input, .textarea {
+.input,
+.textarea {
   width: 100%;
   padding: 0.5rem;
   margin: 0.5rem 0;
@@ -22,7 +23,8 @@
   font-weight: 500;
 }
 
-.input::placeholder, .textarea::placeholder {
+.input::placeholder,
+.textarea::placeholder {
   color: #ffffffb3;
 }
 

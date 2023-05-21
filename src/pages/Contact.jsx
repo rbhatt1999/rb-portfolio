@@ -10,7 +10,7 @@ export default function Contact() {
     </div>
     <div className={styles.content}>
       <h1 className={styles.title}>Contact Me</h1>
-      <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
+      <p>I&apos;m always interested in hearing about new projects, so if you&apos;d like to chat please get in touch.</p>
       <Form />
     </div>
     </div>
