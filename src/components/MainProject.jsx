@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
 import styles from './MainProject.module.css'
+import { MdLiveTv } from 'react-icons/md'
+import { AiFillGithub } from 'react-icons/ai'
 
 export default function MainProject({ project }) {
   return (
@@ -18,8 +20,8 @@ export default function MainProject({ project }) {
           ))}
         </div>
         <div className={styles.btnContainer}>
-          <a href={project.btn1} target="_blank" rel="noreferrer"> Live</a>
-          <a href={project.btn2} target="_blank" rel="noreferrer"> Code</a>
+          <a href={project.btn1} target="_blank" rel="noreferrer"> <MdLiveTv/> Live</a>
+          <a href={project.btn2} target="_blank" rel="noreferrer"> <AiFillGithub/> GitHub</a>
         </div>
       </div>
     </div>

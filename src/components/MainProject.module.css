@@ -87,6 +87,9 @@
   border-radius: 5px;
   width: 100px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .btnContainer a:hover {
@@ -103,15 +106,8 @@
     flex-direction: column;
   }
 
-  .languageContainer {
-    justify-content: space-between;
-  }
-
   .language {
     font-size: 0.8rem;
   }
 
-  .btnContainer {
-    justify-content: space-between;
-  }
 }

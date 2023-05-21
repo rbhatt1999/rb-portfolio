@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 60px;
+  gap: 50px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex: 1;
+}
+
+.techContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #02ddff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  cursor: pointer;
+  box-shadow: -4px 4px 10px #02ddff;
+  transition: all 0.5s ease-in-out;
+}
+
+.techContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 4px -4px 10px #02ddff;
+  background-color: #313131;
+}
+
+.techContainer:hover h2 {
+  color: #02ddff;
+}
+
+.techContainer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+}
+
+.techContainer li {
+  font-size: 22px;
+  width: 100%;
+  border-bottom: 2px solid #02ddff;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    
+}
+
+.techContainer svg {
+  font-size: 30px;
+}
+
+.techContainer li:hover {
+  color: #02ddff;
+}
+
+.techContainer li:hover svg {
+  color: #02ddff;
+  animation: rotate 1.5s infinite;
+}
+
+.frontcontainer {
+  animation: l-t-r 1.5s ease-in-out;
+}
+
+.backcontainer {
+  animation: d-t-u 1.5s ease-in-out;
+}
+
+.skillcontainer {
+  animation: r-t-l 1.5s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes l-t-r {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes r-t-l {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes d-t-u {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .techContainer {
+    box-shadow: none;
+  }
+
+  .techContainer:hover {
+    transform: scale(1);
+    box-shadow:0 0 10px #02ddff;
+    background-color: #313131;
+  }
+
+  .backcontainer {
+    animation: r-t-l 1.5s ease-in-out;
+  }
+}
