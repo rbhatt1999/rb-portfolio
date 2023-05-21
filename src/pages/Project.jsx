@@ -13,7 +13,7 @@ export default function Project() {
   const projects = [{
     h1: 'Budget App',
     p: "Budget app is a Ruby on Rails-based app for managing financial transactions. It offers categorized lists, sign-up and login pages, and easy navigation. Users can add new categories and transactions, making it a user-friendly and efficient solution for managing finances.",
-    language: ['Ruby on Rails', 'css', 'bootstrap'],
+    language: ['Ruby on Rails', 'Postgres', 'bootstrap'],
     image: `${project1}`,
     btn1: 'https://budget-6lkf.onrender.com/',
     btn2: 'https://github.com/rbhatt1999/budget-app',
@@ -21,7 +21,7 @@ export default function Project() {
   {
     h1: 'Stay a While',
     p: " Stay a while is a Home Stay reservation app that lets users find their Home away from home. Reserve, delete, and create home stays with ease. The website showcases listed home stays for others to see. Features include login, home page, detailed listings, booking, adding new home stays, deleting listings, and responsive design.",
-    language: ['Ruby on Rails', 'css', 'bootstrap'],
+    language: ['Ruby on Rails', 'React', 'Redux, 'Postgres'],
     image: `${project2}`,
     btn1: 'https://stay-a-while-front-end.vercel.app/',
     btn2: 'https://github.com/rbhatt1999/stay-a-while-front-end',
@@ -29,7 +29,7 @@ export default function Project() {
   {
     h1: 'Recipe App',
     p: 'The Recipe app enables you to manage your recipes and ingredients. You can save ingredients, monitor your stock, develop new recipes, and generate a shopping list based on what you have and what you need for a recipe. Additionally, the app emphasizes the importance of sharing recipes and provides option to make them public for everyone to access.',
-    language: ['Ruby on Rails', 'css', 'bootstrap'],
+    language: ['Ruby on Rails', 'Postgres', 'bootstrap'],
     image: `${project3}`,
     btn1: 'https://recipe-app-lxw4.onrender.com/',
     btn2: 'https://github.com/rbhatt1999/recipe_app',
