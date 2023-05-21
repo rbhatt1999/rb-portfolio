@@ -1,0 +1,30 @@
+.mobile-screen-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  flex-direction: column !important;
+  gap: 2rem;
+  font-size: 20px;
+  background: transparent !important;
+}
+
+.desktop-screen-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  gap: 2rem;
+  font-size: 20px;
+}
+
+.nav-link.active {
+  color: #02ddff !important;
+  box-shadow: 0 2px #02ddff !important;
+}
+
+@media screen and (max-width: 768px) {
+  .desktop-screen-navbar {
+    display: none;
+  }
+}
