@@ -50,7 +50,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-    
 }
 
 .techContainer svg {
@@ -128,14 +127,14 @@
   .container {
     padding: 0 20px;
   }
-  
+
   .techContainer {
     box-shadow: none;
   }
 
   .techContainer:hover {
     transform: scale(1);
-    box-shadow:0 0 10px #02ddff;
+    box-shadow: 0 0 10px #02ddff;
     background-color: #313131;
   }
 
