@@ -21,7 +21,7 @@ export default function Project() {
   {
     h1: 'Stay a While',
     p: " Stay a while is a Home Stay reservation app that lets users find their Home away from home. Reserve, delete, and create home stays with ease. The website showcases listed home stays for others to see. Features include login, home page, detailed listings, booking, adding new home stays, deleting listings, and responsive design.",
-    language: ['Ruby on Rails', 'React', 'Redux, 'Postgres'],
+    language: ['Ruby on Rails', 'React', 'Redux', 'Postgres'],
     image: `${project2}`,
     btn1: 'https://stay-a-while-front-end.vercel.app/',
     btn2: 'https://github.com/rbhatt1999/stay-a-while-front-end',
