@@ -1,10 +1,10 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  overflow: hidden;
 }
 
 .imgContainer {
@@ -27,6 +27,7 @@
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -36,6 +37,7 @@
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -68,7 +70,7 @@
 
 .language:hover {
   background-color: #02ddff92;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btnContainer {
@@ -89,7 +91,7 @@
 
 .btnContainer a:hover {
   background-color: #02ddff92;
-  color: #ffffff;
+  color: #fff;
 }
 
 .btnContainer a:active {

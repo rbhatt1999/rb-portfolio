@@ -2,9 +2,18 @@ import { useState } from 'react'
 import MainProject from '../components/MainProject'
 import styles from './Project.module.css'
 import budgetappimg from '../assets/images/Budget-app.png'
+import SingleProject from '../components/SingleProject'
 
 export default function Project() {
   const projects = [{
+    h1: 'Budget App',
+    p: "Budget app is a Ruby on Rails-based app for managing financial transactions. It offers categorized lists, sign-up and login pages, and easy navigation. Users can add new categories and transactions, making it a user-friendly and efficient solution for managing finances.",
+    language: ['Ruby on Rails', 'css', 'bootstrap'],
+    image: `${budgetappimg}`,
+    btn1: 'https://budget-6lkf.onrender.com/',
+    btn2: 'https://github.com/rbhatt1999/budget-app',
+  },
+  {
     h1: 'Budget App',
     p: "Budget app is a Ruby on Rails-based app for managing financial transactions. It offers categorized lists, sign-up and login pages, and easy navigation. Users can add new categories and transactions, making it a user-friendly and efficient solution for managing finances.",
     language: ['Ruby on Rails', 'css', 'bootstrap'],
@@ -27,6 +36,11 @@ export default function Project() {
       <div className={styles.mainProjectCOntainer}>
         <MainProject project={project} />
       </div>
+      <div className = {styles.allProjectsContainer}>
+          {projects.map((project, index) => (
+            <SingleProject project={project} key={index} setProject={setProject} />
+          ))}
+        </div>
     </div>
   )
 }
