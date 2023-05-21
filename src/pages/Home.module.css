@@ -1,0 +1,120 @@
+.homeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 60px;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex: 1;
+}
+
+.homeContent h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 52px;
+  animation: l-t-r 1s ease-in-out;
+}
+
+.homeContent h2 {
+  animation: l-t-r 1s ease-in-out;
+}
+
+.homeContent p {
+  font-size: 20px;
+  max-width: 700px;
+  animation: l-t-r 1s ease-in-out;
+}
+
+.homeContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.imgContainer {
+  flex: 0.6;
+}
+
+.myImage {
+  width: 100%;
+}
+
+.homeText {
+  display: flex;
+  gap: 5px;
+}
+
+.homeText span {
+  border-right: 2px solid #f3f3f3;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #02ddff;
+  animation: typing steps(18) 2s infinite alternate, blink-caret 0.6s infinite;
+  max-width: fit-content;
+  height: 100%;
+}
+
+@keyframes l-t-r {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: #f3f3f3;
+  }
+}
+
+.homeContact {
+  display: flex;
+  flex-direction: row;
+  animation: l-t-r 1s ease-in-out;
+  gap: 10px;
+}
+
+.homeIcon {
+  width: 30px;
+  height: 30px;
+	cursor: pointer;
+}
+
+.homeIcon:hover, .homeIcon:active {
+	transform: scale(1.2);
+	color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .homeContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imgContainer {
+    width: 100%;
+  }
+}
