@@ -6,9 +6,9 @@ export default function Navlinks({className, clickHander}) {
   return (
       <Nav className={`mr-auto ${className}`}>
         <NavLink onClick={clickHander} className="nav-link" to="/">Home</NavLink>
-        <NavLink onClick={clickHander} className="nav-link" to="/about">About</NavLink>
         <NavLink onClick={clickHander} className="nav-link" to="/project">Projects</NavLink>
         <NavLink onClick={clickHander} className="nav-link" to="/tech">Technology</NavLink>
+        <NavLink onClick={clickHander} className="nav-link" to="/contact">Contact</NavLink>
       </Nav>
   )
 }

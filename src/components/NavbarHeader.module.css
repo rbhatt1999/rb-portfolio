@@ -8,6 +8,7 @@
   left: 0;
   right: 0;
   height: 80px;
+  z-index: 200;
 }
 
 .logopng {
@@ -63,7 +64,7 @@
   top: 0;
   left: 0;
   z-index: 100;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
 }
 
 @media screen and (max-width: 768px) {
