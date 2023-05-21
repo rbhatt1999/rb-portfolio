@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from './Home.module.css'
 import pic from '../assets/images/homepageimage.png'
 import { motion } from 'framer-motion'
@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <div className={style.homeContainer}>
       <div className={style.homeContent}>
-        <h1 className={style.homeTitle}>Hey There. I'm Rohit</h1>
-        <h2 className={style.homeText}>I'm a<span> {state[index]} </span></h2>
+        <h1 className={style.homeTitle}>Hey There. I&apos;m Rohit</h1>
+        <h2 className={style.homeText}>I&apos;m a<span> {state[index]} </span></h2>
         <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
         <div className={style.homeContact}>
           <a href='https://github.com/rbhatt1999'><AiFillGithub className={style.homeIcon}/></a>
