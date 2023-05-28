@@ -49,3 +49,15 @@ li {
 html {
   overflow-y: scroll;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px!important;
+  }
+  h2 {
+    font-size: 23px!important;
+  }
+  p {
+    font-size: 18px!important;
+  }
+}
