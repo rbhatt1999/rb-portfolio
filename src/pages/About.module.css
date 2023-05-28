@@ -1,0 +1,184 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 60px;
+  gap: 40px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex: 1;
+}
+
+.aboutContent h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 52px;
+  animation: l-t-r 1s ease-in-out;
+  margin: 0;
+}
+
+.aboutContent p {
+  margin: 0;
+  font-size: 20px;
+  max-width: 700px;
+  animation: l-t-r 1s ease-in-out;
+}
+
+.aboutContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgContainer {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+  animation: r-t-l 1s ease-in-out;
+}
+
+.myImage {
+  width: 100%;
+  border-radius: 100%;
+  max-width: 350px;
+  box-shadow: 0 0 20px 4px #02ddff;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  font-size: 20px;
+  animation: l-t-r 1s ease-in-out;
+}
+
+.aboutText span {
+  background-color: rgba(100, 100, 100, 0.577);
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.aboutText span:first-child {
+  border-right: 1px solid rgb(0, 208, 255);
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 20px 0 0 20px;
+}
+
+.aboutText span:last-child {
+  padding-left: 20px;
+  padding-right: 30px;
+  border-radius: 0 20px 20px 0;
+}
+
+.aboutText span.active {
+  background-color: rgba(0, 191, 255, 0.5);
+  animation: fadeInbackground 0.2s ease-in-out;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  animation: l-t-r 1s ease-in-out;
+}
+
+.button {
+  background-color: #5858589b;
+  border: 1px solid #02ddff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #02ddffcc;
+  color: white;
+  transform: scale(1.05);
+}
+
+.button:active {
+  background-color: #00a6c0;
+  color: white;
+  transform: scale(0.99);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInbackground {
+  from {
+    background-color: rgba(100, 100, 100, 0.577);
+  }
+
+  to {
+    background-color: rgba(0, 191, 255, 0.5);
+  }
+}
+
+@keyframes l-t-r {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes r-t-l {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.aboutContact {
+  display: flex;
+  flex-direction: row;
+  animation: l-t-r 1s ease-in-out;
+  gap: 10px;
+}
+
+.aboutIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.aboutIcon:hover,
+.aboutIcon:active {
+  transform: scale(1.2);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .imgContainer {
+    width: 100%;
+    order: -1;
+    justify-content: center;
+  }
+
+  .myImage {
+    max-width: 200px;
+  }
+}

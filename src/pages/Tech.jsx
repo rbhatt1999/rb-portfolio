@@ -5,7 +5,7 @@ import { TbBrandJavascript,TbBrandRedux } from 'react-icons/tb'
 import { DiReact, DiRuby } from 'react-icons/di'
 import { FaBootstrap } from 'react-icons/fa'
 import { FiFramer } from 'react-icons/fi'
-import { SiJest, SiPostman, SiVisualstudiocode, SiNetlify, SiPostgresql, SiRubyonrails, SiAuth0, SiHeroku } from 'react-icons/si'
+import { SiTailwindcss, SiPostman, SiVisualstudiocode, SiNetlify, SiPostgresql, SiRubyonrails, SiAuth0, SiHeroku } from 'react-icons/si'
 import { HiOutlineColorSwatch, HiLockClosed, HiOutlineDeviceTablet  } from 'react-icons/hi'
 import { BsGit,BsFillTerminalFill } from 'react-icons/bs'
 
@@ -22,7 +22,7 @@ export default function Tech() {
           <li><TbBrandRedux/> Redux</li>
           <li><FaBootstrap/> Bootstrap</li>
           <li><FiFramer/> FramerMotion</li>
-          <li><SiJest/> Jest</li>
+          <li><SiTailwindcss/> Tailwind</li>
           </ul>
       </div>
       <div className={`${styles.techContainer} ${styles.backcontainer}`}>
@@ -39,16 +39,16 @@ export default function Tech() {
           </ul>
       </div>
       <div className={`${styles.techContainer} ${styles.skillcontainer}`}>
-        <h2>SKILLS</h2>
+        <h2>OTHER SKILLS</h2>
         <ul>
-          <li><BsGit/> git</li>
+          <li><BsGit/> Git</li>
           <li><AiFillGithub/> GitHub</li>
           <li><SiHeroku/> Heroku</li>
           <li> <SiNetlify/> Netlify</li>
           <li><SiPostman/> Postman</li>
           <li><SiVisualstudiocode />VS Code</li>
           <li><BsFillTerminalFill/> Terminal</li>
-          <li><AiFillGitlab/> Gitlab</li>
+          <li><AiFillGitlab/> GitLab</li>
           </ul>
       </div>  
     </div>

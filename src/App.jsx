@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Project from './pages/Project'
 import Tech from './pages/Tech'
+import About from './pages/About'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavbarHeader />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/project" element={<Project />} />
         <Route path="/tech" element={<Tech />} />

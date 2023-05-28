@@ -16,6 +16,7 @@
   padding: 0.5rem 2rem;
   gap: 2rem;
   font-size: 20px;
+  background: transparent !important;
 }
 
 .nav-link.active {

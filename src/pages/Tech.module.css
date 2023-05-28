@@ -62,7 +62,6 @@
 
 .techContainer li:hover svg {
   color: #02ddff;
-  animation: rotate 1.5s infinite;
 }
 
 .frontcontainer {
@@ -75,16 +74,6 @@
 
 .skillcontainer {
   animation: r-t-l 1.5s ease-in-out;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes l-t-r {
