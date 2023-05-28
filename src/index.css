@@ -31,3 +31,21 @@ a {
 li {
   list-style: none;
 }
+
+::-webkit-scrollbar {
+  position: fixed;
+  width: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #242424;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #c2c2c2;
+}
+
+html {
+  overflow-y: scroll;
+}

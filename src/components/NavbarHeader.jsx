@@ -35,7 +35,7 @@ export default function NavbarHeader() {
   }
   return (
     <Navbar className={style.navbar} bg="dark" variant="dark">
-      <Navbar.Brand href="#home"><img className={style.logopng} src={logo} alt="RB" /></Navbar.Brand>
+      <Navbar.Brand><img className={style.logopng} src={logo} alt="RB" /></Navbar.Brand>
       <AnimatePresence>
         {hamburger ? (
           <>

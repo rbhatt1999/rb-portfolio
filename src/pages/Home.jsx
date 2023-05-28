@@ -24,7 +24,7 @@ export default function Home() {
       <div className={style.homeContent}>
         <h1 className={style.homeTitle}>Hey There. I&apos;m Rohit</h1>
         <h2 className={style.homeText}>I&apos;m a<span> {state[index]} </span></h2>
-        <p>I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+        <p>Ready to turn your digital dreams into reality? With a proven track record in building impressive products, features, and websites, I'll bring your vision to life. Don't wait &ndash; contact me today and let's create something extraordinary together!</p>
         <div className={style.homeContact}>
           <a href='https://github.com/rbhatt1999'><AiFillGithub className={style.homeIcon}/></a>
           <a href='https://www.linkedin.com/in/rohitbhatt-dev/'><AiFillLinkedin className={style.homeIcon}/></a>
