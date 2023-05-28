@@ -47,8 +47,7 @@
   box-shadow: 0 0 20px 4px #02ddff;
 }
 
-
-.aboutText{
+.aboutText {
   display: flex;
   flex-direction: row;
   width: fit-content;
