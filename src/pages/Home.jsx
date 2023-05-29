@@ -16,7 +16,7 @@ export default function Home() {
           return index + 1;
         }
       });
-    }, 4005);
+    }, 4000);
     return () => clearInterval(interval);
   }, [state.length]);
   return (
