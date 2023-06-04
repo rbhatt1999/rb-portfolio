@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './Form.module.css';
 import { AnimatePresence, motion } from 'framer-motion';
+import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter, AiFillMediumSquare } from 'react-icons/ai';
 
 export default function Form() {
   const [formStatus, setFormStatus] = useState(true);
@@ -47,6 +48,15 @@ export default function Form() {
           <p>I&apos;ll get back to you as soon as possible.</p>
         </motion.div>
       )}
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 3 } }}
+        className={styles.homeContact}>
+          <a href='https://github.com/rbhatt1999' target='_blank'><AiFillGithub className={styles.homeIcon}/></a>
+          <a href='https://www.linkedin.com/in/rohitbhatt-dev/' target='_blank'><AiFillLinkedin className={styles.homeIcon}/></a>
+          <a href='https://twitter.com/Rohit_Bhatt_' target='_blank'><AiOutlineTwitter className={styles.homeIcon}/></a>
+          <a href='https://medium.com/@rbhatt199924' target='_blank'><AiFillMediumSquare className={styles.homeIcon}/></a>
+      </motion.div>
     </section>
   )
 }

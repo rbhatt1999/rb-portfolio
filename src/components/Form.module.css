@@ -59,3 +59,25 @@
   background-color: #01b747;
   border-radius: 20px;
 }
+
+.homeContact {
+  align-self: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  animation: l-t-r 1s ease-in-out;
+  gap: 10px;
+}
+
+.homeIcon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.homeIcon:hover,
+.homeIcon:active {
+  transform: scale(1.2);
+  color: white;
+}
