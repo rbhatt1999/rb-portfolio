@@ -31,10 +31,10 @@ export default function Home() {
         <Link to="/contact" className={style.button}>Contact Me</Link>
         </div>
         <div className={style.homeContact}>
-          <a href='https://github.com/rbhatt1999' target='_blank'><AiFillGithub className={style.homeIcon}/></a>
-          <a href='https://www.linkedin.com/in/rohitbhatt-dev/' target='_blank'><AiFillLinkedin className={style.homeIcon}/></a>
-          <a href='https://twitter.com/Rohit_Bhatt_' target='_blank'><AiOutlineTwitter className={style.homeIcon}/></a>
-          <a href='https://medium.com/@rbhatt199924' target='_blank'><AiFillMediumSquare className={style.homeIcon}/></a>
+          <a href='https://github.com/rbhatt1999' target='_blank' rel="noreferrer"><AiFillGithub className={style.homeIcon}/></a>
+          <a href='https://www.linkedin.com/in/rohitbhatt-dev/' target='_blank' rel="noreferrer"><AiFillLinkedin className={style.homeIcon}/></a>
+          <a href='https://twitter.com/Rohit_Bhatt_' target='_blank' rel="noreferrer"><AiOutlineTwitter className={style.homeIcon}/></a>
+          <a href='https://medium.com/@rbhatt199924' target='_blank' rel="noreferrer"><AiFillMediumSquare className={style.homeIcon}/></a>
         </div>
       </div>
       <div className={style.imgContainer}>

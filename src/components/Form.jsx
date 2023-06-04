@@ -52,10 +52,10 @@ export default function Form() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0, transition: { duration: 1, delay: 3 } }}
         className={styles.homeContact}>
-          <a href='https://github.com/rbhatt1999' target='_blank'><AiFillGithub className={styles.homeIcon}/></a>
-          <a href='https://www.linkedin.com/in/rohitbhatt-dev/' target='_blank'><AiFillLinkedin className={styles.homeIcon}/></a>
-          <a href='https://twitter.com/Rohit_Bhatt_' target='_blank'><AiOutlineTwitter className={styles.homeIcon}/></a>
-          <a href='https://medium.com/@rbhatt199924' target='_blank'><AiFillMediumSquare className={styles.homeIcon}/></a>
+          <a href='https://github.com/rbhatt1999' target='_blank' rel="noreferrer"><AiFillGithub className={styles.homeIcon}/></a>
+          <a href='https://www.linkedin.com/in/rohitbhatt-dev/' target='_blank' rel="noreferrer"><AiFillLinkedin className={styles.homeIcon}/></a>
+          <a href='https://twitter.com/Rohit_Bhatt_' target='_blank' rel="noreferrer"><AiOutlineTwitter className={styles.homeIcon}/></a>
+          <a href='https://medium.com/@rbhatt199924' target='_blank' rel="noreferrer"><AiFillMediumSquare className={styles.homeIcon}/></a>
       </motion.div>
     </section>
   )
