@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import style from './Home.module.css'
 import pic from '../assets/images/homepageimage.png'
 import { motion } from 'framer-motion'
@@ -16,7 +17,7 @@ export default function Home() {
           return index + 1;
         }
       });
-    }, 4005);
+    }, 4002);
     return () => clearInterval(interval);
   }, [state.length]);
   return (
@@ -26,10 +27,14 @@ export default function Home() {
         <h2 className={style.homeText}>I&apos;m a<span> {state[index]} </span></h2>
         <p>Ready to turn your digital dreams into reality? With a proven track record in building impressive products, features, and websites, I&apos;ll bring your vision to life. Don&apos;t wait &ndash; contact me today and let&apos;s create something extraordinary together!</p>
         <div className={style.homeContact}>
-          <a href='https://github.com/rbhatt1999'><AiFillGithub className={style.homeIcon}/></a>
-          <a href='https://www.linkedin.com/in/rohitbhatt-dev/'><AiFillLinkedin className={style.homeIcon}/></a>
-          <a href='https://twitter.com/Rohit_Bhatt_'><AiOutlineTwitter className={style.homeIcon}/></a>
-          <a href='https://medium.com/@rbhatt199924'><AiFillMediumSquare className={style.homeIcon}/></a>
+        <Link to="/about" className={style.button}>Know More</Link>
+        <Link to="/contact" className={style.button}>Contact Me</Link>
+        </div>
+        <div className={style.homeContact}>
+          <a href='https://github.com/rbhatt1999' target='_blank' rel="noreferrer"><AiFillGithub className={style.homeIcon}/></a>
+          <a href='https://www.linkedin.com/in/rohitbhatt-dev/' target='_blank' rel="noreferrer"><AiFillLinkedin className={style.homeIcon}/></a>
+          <a href='https://twitter.com/Rohit_Bhatt_' target='_blank' rel="noreferrer"><AiOutlineTwitter className={style.homeIcon}/></a>
+          <a href='https://medium.com/@rbhatt199924' target='_blank' rel="noreferrer"><AiFillMediumSquare className={style.homeIcon}/></a>
         </div>
       </div>
       <div className={style.imgContainer}>
